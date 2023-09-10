@@ -14,6 +14,46 @@ const routes = [
         name: "Главная",
         component: () => import("@/pages/PHomeView.vue"),
       },
+      {
+        path: "/users",
+        name: "Пользователи",
+        component: () => import("@/pages/PUsers.vue"),
+      },
+      {
+        path: "/search",
+        name: "Поиск",
+        component: () => import("@/pages/PSearch.vue"),
+      },
+      {
+        path: "/orders",
+        name: "Заказы",
+        component: () => import("@/pages/POrders.vue"),
+      },
+      {
+        path: "/reports",
+        name: "Отчеты",
+        component: () => import("@/pages/PReports.vue"),
+      },
+      {
+        path: "/settings",
+        name: "Настройки",
+        component: () => import("@/pages/PSettings.vue"),
+      },
+      {
+        path: "/services",
+        name: "Cервисы",
+        component: () => import("@/pages/PServices.vue"),
+      },
+      {
+        path: "/calendar",
+        name: "Календарь",
+        component: () => import("@/pages/PCalendar.vue"),
+      },
+      {
+        path: "/analyse",
+        name: "Аналитика",
+        component: () => import("@/pages/PAnalyse.vue"),
+      },
     ],
   },
   {

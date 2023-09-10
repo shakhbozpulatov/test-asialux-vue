@@ -98,6 +98,7 @@ const tabDirection = ref("oneWay");
   border-radius: 20px;
   background: #cce4ff;
   padding: 20px;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.05);
   .search-categ {
     .tab-wrap {
       width: 100%;

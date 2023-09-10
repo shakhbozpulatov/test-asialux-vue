@@ -5,7 +5,7 @@
     </div>
     <div class="w-full">
       <TheHeader />
-      <div class="mt-4 mx-3">
+      <div class="mt-4 px-3">
         <RouterView />
       </div>
     </div>
