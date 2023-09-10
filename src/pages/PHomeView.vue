@@ -1,7 +1,11 @@
 <template>
-  <div></div>
+  <div class="home">
+    <TheSearchView />
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import TheSearchView from "../components/TheSearchView.vue";
+</script>
 
 <style lang="scss" scoped></style>
