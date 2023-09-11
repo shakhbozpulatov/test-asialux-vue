@@ -45,19 +45,19 @@ const statisticsCards = reactive([
     bgColor: `linear-gradient(110deg, #feecb3 2.68%, rgba(254, 236, 179, 0.5) 98.74%);`,
   },
   {
-    name: "Авиаперелеты",
+    name: "Чартеры",
     image: new URL("../assets/images/avia-img.svg", import.meta.url),
-    bgColor: `linear-gradient(110deg, #feecb3 2.68%, rgba(254, 236, 179, 0.5) 98.74%);`,
+    bgColor: `linear-gradient(110deg, #BAE2E9 2.68%, rgba(186, 226, 233, 0.50) 98.74%);`,
   },
   {
-    name: "Авиаперелеты",
-    image: new URL("../assets/images/avia-img.svg", import.meta.url),
-    bgColor: `linear-gradient(110deg, #feecb3 2.68%, rgba(254, 236, 179, 0.5) 98.74%);`,
+    name: "Туры",
+    image: new URL("../assets/images/tur-img.svg", import.meta.url),
+    bgColor: `linear-gradient(110deg, #FEEAEC 2.68%, rgba(254, 234, 236, 0.50) 98.74%);`,
   },
   {
-    name: "Авиаперелеты",
-    image: new URL("../assets/images/avia-img.svg", import.meta.url),
-    bgColor: `linear-gradient(110deg, #feecb3 2.68%, rgba(254, 236, 179, 0.5) 98.74%);`,
+    name: "Отели",
+    image: new URL("../assets/images/hotel-img.svg", import.meta.url),
+    bgColor: `linear-gradient(110deg, #CCE4FF 2.68%, rgba(204, 228, 255, 0.50) 98.74%);`,
   },
 ]);
 </script>

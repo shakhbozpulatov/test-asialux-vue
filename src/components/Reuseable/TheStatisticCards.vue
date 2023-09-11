@@ -1,5 +1,8 @@
 <template>
-  <div class="card-wrap p-8 mt-4">
+  <div
+    class="card-wrap p-8 mt-4"
+    :style="`background: ${props.config.bgColor}`"
+  >
     <div class="flex justify-between">
       <div>
         <p class="text-[#333] font-bold text-lg">{{ props.config.name }}</p>
@@ -9,10 +12,12 @@
       </div>
       <div>
         <div class="flex flex-col justify-end items-center">
-          <p class="text-[#333] font-medium text-base underline">Подробнее</p>
-          <img :src="props.config.image" alt="" class="mb-4" />
+          <p class="text-[#333] font-medium text-base underline mb-2">
+            Подробнее
+          </p>
+          <img :src="props.config.image" alt="" class="inner-img mb-4" />
         </div>
-        <div class="mb-2">
+        <div class="">
           <p class="text-[#333] font-bold text-lg text-end">Выписано 0</p>
           <p class="text-[#333] font-bold text-lg text-end">Бронирований 0</p>
         </div>
@@ -33,10 +38,16 @@ const imageSource = computed((link) => {
 <style lang="scss" scoped>
 .card-wrap {
   border-radius: 20px;
-  background: linear-gradient(
-    110deg,
-    #feecb3 2.68%,
-    rgba(254, 236, 179, 0.5) 98.74%
-  );
+  transition: all 0.3s;
+  cursor: pointer;
+  .inner-img {
+    transition: all 0.3s;
+  }
+}
+.card-wrap:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  .inner-img {
+    transform: scale(1.2);
+  }
 }
 </style>

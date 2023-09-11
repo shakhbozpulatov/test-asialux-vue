@@ -336,7 +336,9 @@ const optionsCity = [
 ];
 let countMultiCity = ref(1);
 const addRouteBtn = function () {
-  countMultiCity.value++;
+  if (countMultiCity.value > 0 && countMultiCity.value < 4) {
+    countMultiCity.value++;
+  }
 };
 const subtractRouteBtn = function () {
   countMultiCity.value--;
