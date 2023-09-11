@@ -107,13 +107,17 @@
             </el-button>
             <template #dropdown>
               <el-dropdown-menu>
-                <div class="content-dropdown px-3 py-2 w-100">
+                <div class="content-dropdown px-3 py-2 w-[300px]">
                   <div
-                    class="d-flex align-items-center justify-content-between"
+                    class="d-flex align-items-center justify-content-between mb-2"
                   >
-                    <div class="person-type">
-                      <h6 class="title m-0">Взрослые</h6>
-                      <p class="subtitle m-0">Старше 12 лет</p>
+                    <div>
+                      <h6 class="text-sm font-bold text-[#333] m-0">
+                        Взрослые
+                      </h6>
+                      <p class="text-xs font-bold text-[#333333a8] m-0">
+                        Старше 12 лет
+                      </p>
                     </div>
                     <div>
                       <el-input-number
@@ -124,11 +128,13 @@
                     </div>
                   </div>
                   <div
-                    class="d-flex align-items-center justify-content-between"
+                    class="d-flex align-items-center justify-content-between mb-2"
                   >
                     <div class="person-type">
-                      <h6 class="title m-0">Дети</h6>
-                      <p class="subtitle m-0">От 2-х до 12 лет</p>
+                      <h6 class="text-sm font-bold text-[#333] m-0">Дети</h6>
+                      <p class="text-xs font-bold text-[#333333a8] m-0">
+                        От 2-х до 12 лет
+                      </p>
                     </div>
                     <div>
                       <el-input-number
@@ -142,8 +148,12 @@
                     class="d-flex align-items-center justify-content-between"
                   >
                     <div class="person-type">
-                      <h6 class="title m-0">Младенцы</h6>
-                      <p class="subtitle m-0">До 2-х лет</p>
+                      <h6 class="text-sm font-bold text-[#333] m-0">
+                        Младенцы
+                      </h6>
+                      <p class="text-xs font-bold text-[#333333a8] m-0">
+                        До 2-х лет
+                      </p>
                     </div>
                     <el-input-number
                       v-model="searchData.infant"
