@@ -1,33 +1,35 @@
 <template>
   <div class="home">
     <TheSearchView />
-    <div class="row">
-      <div class="col-md-8">
-        <div class="adv-wrap mt-4">
-          <div class="row">
-            <div class="col-md-6">
-              <p class="text mb-3">У вас пока нет договоров</p>
-              <div class="mb-3">
-                <p class="text m-0">Общий остаток</p>
-                <p class="text upper m-0">Нет данных</p>
+    <div class="mb-6">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="adv-wrap mt-4">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="text mb-3">У вас пока нет договоров</p>
+                <div class="mb-3">
+                  <p class="text m-0">Общий остаток</p>
+                  <p class="text upper m-0">Нет данных</p>
+                </div>
+                <div>
+                  <p class="text m-0">Кредитная линия</p>
+                  <p class="text upper m-0">Нет данных</p>
+                </div>
               </div>
-              <div>
-                <p class="text m-0">Кредитная линия</p>
-                <p class="text upper m-0">Нет данных</p>
+              <div class="col-md-6">
+                <img src="../assets/images/adv.svg" alt="" />
               </div>
-            </div>
-            <div class="col-md-6">
-              <img src="../assets/images/adv.svg" alt="" />
             </div>
           </div>
         </div>
-      </div>
-      <div
-        v-for="(elem, index) in statisticsCards"
-        :key="index"
-        class="col-md-4"
-      >
-        <TheStatisticCards :config="elem" />
+        <div
+          v-for="(elem, index) in statisticsCards"
+          :key="index"
+          class="col-md-4"
+        >
+          <TheStatisticCards :config="elem" />
+        </div>
       </div>
     </div>
   </div>
