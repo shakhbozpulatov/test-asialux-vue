@@ -21,7 +21,7 @@
         <div class="menu-wrap flex flex-col justify-between">
           <ul class="menu">
             <router-link to="/dashboard">
-              <li class="menu-item flex items-center gap-4 cursor-pointer">
+              <li class="menu-item d-flex items-center gap-4 cursor-pointer">
                 <svg
                   width="22"
                   height="22"
@@ -49,7 +49,10 @@
             </router-link>
 
             <li class="menu-item cursor-pointer">
-              <div @click="submenu = !submenu" class="flex items-center gap-4">
+              <div
+                @click="submenu = !submenu"
+                class="d-flex items-center gap-3"
+              >
                 <svg
                   width="22"
                   height="22"
@@ -57,7 +60,7 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_14_140)">
+                  <g clip-path="url(#clip0_59_2327)">
                     <path
                       opacity="0.978"
                       fill-rule="evenodd"
@@ -67,7 +70,7 @@
                     />
                   </g>
                   <defs>
-                    <clipPath id="clip0_14_140">
+                    <clipPath id="clip0_59_2327">
                       <rect width="22" height="22" fill="white" />
                     </clipPath>
                   </defs>
@@ -87,16 +90,20 @@
                 class="submenu flex flex-col"
                 :class="submenu ? 'open-submenu' : ''"
               >
-                <router-link to="/users">
+                <router-link to="/employees">
                   <li class="submenu-item mt-3">Сотрудники</li>
                 </router-link>
-                <li class="submenu-item">Субагенты</li>
-                <li class="submenu-item">Корпорации</li>
+                <router-link to="/subagents">
+                  <li class="submenu-item">Субагенты</li>
+                </router-link>
+                <router-link to="/corporation">
+                  <li class="submenu-item">Корпорации</li>
+                </router-link>
               </ul>
             </li>
 
             <router-link to="/search">
-              <li class="menu-item flex items-center gap-4 cursor-pointer">
+              <li class="menu-item d-flex items-center gap-4 cursor-pointer">
                 <svg
                   width="22"
                   height="22"
@@ -124,7 +131,7 @@
               </li>
             </router-link>
             <router-link to="/orders">
-              <li class="menu-item flex items-center gap-4 cursor-pointer">
+              <li class="menu-item d-flex items-center gap-4 cursor-pointer">
                 <svg
                   width="22"
                   height="22"
@@ -152,7 +159,7 @@
               </li>
             </router-link>
             <router-link to="/reports">
-              <li class="menu-item flex items-center gap-4 cursor-pointer">
+              <li class="menu-item d-flex items-center gap-4 cursor-pointer">
                 <svg
                   width="22"
                   height="22"
@@ -194,7 +201,7 @@
               </li>
             </router-link>
             <router-link to="/settings">
-              <li class="menu-item flex items-center gap-4 cursor-pointer">
+              <li class="menu-item d-flex items-center gap-4 cursor-pointer">
                 <svg
                   width="22"
                   height="22"
@@ -229,20 +236,20 @@
               </li>
             </router-link>
             <router-link to="/services">
-              <li class="menu-item flex items-center gap-4 cursor-pointer">
+              <li class="menu-item d-flex items-center gap-4 cursor-pointer">
                 <i class="fa-solid fa-screwdriver-wrench fa-xl"></i>
                 <p class="m-0">Cервисы</p>
               </li>
             </router-link>
             <router-link to="/calendar">
-              <li class="menu-item flex items-center gap-4 cursor-pointer">
+              <li class="menu-item d-flex items-center gap-4 cursor-pointer">
                 <i class="icon-contract menu-icon fa fa-calendar fa-xl"></i>
 
                 <p class="m-0">Календарь</p>
               </li>
             </router-link>
             <router-link to="/analyse">
-              <li class="menu-item flex items-center gap-4 cursor-pointer">
+              <li class="menu-item d-flex items-center gap-4 cursor-pointer">
                 <i class="fa-regular fa-chart-bar fa-xl"></i>
 
                 <p class="m-0">Аналитика</p>
@@ -250,7 +257,7 @@
             </router-link>
           </ul>
           <ul class="menu">
-            <li class="menu-item flex items-center gap-4 cursor-pointer">
+            <li class="menu-item d-flex items-center gap-4 cursor-pointer">
               <svg
                 width="22"
                 height="22"

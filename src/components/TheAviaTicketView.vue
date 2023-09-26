@@ -29,13 +29,13 @@
 
     <span @click="moreDetailBtn = !moreDetailBtn" class="cursor-pointer">
       <span
-        class="more flex gap-3 items-center justify-end"
+        class="more d-flex gap-3 items-center justify-end"
         v-if="!moreDetailBtn"
       >
         <span class="m-0">Подробнее</span>
         <el-icon><ArrowDown /></el-icon>
       </span>
-      <span v-else class="hide flex gap-3 items-center justify-end">
+      <span v-else class="hide d-flex gap-3 items-center justify-end">
         <span class="m-0">Скрыть</span>
         <el-icon><ArrowUp /></el-icon>
       </span>

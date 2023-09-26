@@ -1,5 +1,5 @@
 <template>
-  <header class="header flex items-center justify-between">
+  <header class="header d-flex items-center justify-between">
     <div class="flex items-center">
       <div
         @click="configStore.isOpenSidebar = true"
@@ -8,9 +8,19 @@
       >
         <img src="../assets/icons/burger.svg" alt="" />
       </div>
-      <p class="mb-0 current-page">{{ $route.name }}</p>
+      <p
+        v-if="
+          $route.name !== 'Сотрудники' &&
+          $route.name !== 'Субагенты' &&
+          $route.name !== 'Корпорации'
+        "
+        class="mb-0 current-page"
+      >
+        {{ $route.name }}
+      </p>
+      <p v-else class="mb-0 current-page">Пользователи</p>
     </div>
-    <img src="../assets//images/logo.svg" alt="" />
+    <img src="../assets/images/logo.svg" alt="" />
     <div>
       <img src="../assets/icons/message.svg" alt="" />
     </div>

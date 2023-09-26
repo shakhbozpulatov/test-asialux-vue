@@ -11,9 +11,19 @@ export const routes = [
         component: () => import("@/pages/PHomeView.vue"),
       },
       {
-        path: "/users",
-        name: "Пользователи",
-        component: () => import("@/pages/PUsers.vue"),
+        path: "/employees",
+        name: "Сотрудники",
+        component: () => import("@/pages/PEmployees.vue"),
+      },
+      {
+        path: "/subagents",
+        name: "Субагенты",
+        component: () => import("@/pages/PSubAgents.vue"),
+      },
+      {
+        path: "/corporation",
+        name: "Корпорации",
+        component: () => import("@/pages/PCorporation.vue"),
       },
       {
         path: "/search",

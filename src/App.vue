@@ -38,4 +38,9 @@ body {
     padding: 10px 12px;
   }
 }
+.search-input-wrap {
+  .el-input__wrapper {
+    border-radius: 0;
+  }
+}
 </style>
