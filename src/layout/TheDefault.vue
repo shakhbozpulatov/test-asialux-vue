@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-import { ref, watch, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
 import TheHeader from "../components/TheHeader.vue";
 import TheSidebar from "../components/TheSidebar.vue";
 import { useConfigStore } from "../stores/config";
